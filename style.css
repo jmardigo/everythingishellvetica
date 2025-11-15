@@ -1,0 +1,44 @@
+*{
+    margin: 0pt;
+    padding: 0pt;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.everythingtitle{
+    font-weight: bold;
+    font-size: 48pt;
+    text-align: center;
+    position: fixed;
+    z-index: 3;
+    color: white;
+    pointer-events: none;
+    
+}
+
+img{
+    width: 140px;
+    height: auto;
+    margin: 0px;
+    z-index: 1;
+    transition: ease-in-out 200ms;
+    opacity: 60%;
+}
+
+img:hover{
+    transform: scale(200%);
+    opacity: 100%;
+    z-index:2;
+}
+
+img:active{
+    transform:skewY(20%);
+}
