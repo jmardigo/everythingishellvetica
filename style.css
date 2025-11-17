@@ -15,17 +15,30 @@ body{
     overflow-y: scroll;
     scrollbar-color: white black;
     scroll-behavior: smooth;
+    min-width: 240px;
     
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .everythingtitle{
     font-weight: bold;
+    display: flex;
     font-size: 48pt;
     text-align: center;
     position: fixed;
     z-index: 3;
     color: white;
     pointer-events: none;
+    justify-self: center;
+    align-self: center;
+    text-shadow: black 2pt 2pt;
     
 }
 
@@ -46,4 +59,10 @@ img:hover{
 
 img:active{
     transform:skewY(20%);
+}
+
+@media only screen and (max-width: 600px) {
+    .everythingtitle{
+        font-size: 24pt;
+    }
 }
