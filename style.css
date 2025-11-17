@@ -63,6 +63,9 @@ img:active{
 
 @media only screen and (max-width: 600px) {
     .everythingtitle{
-        font-size: 24pt;
+        font-size: 36pt;
+    }
+    img{
+        width:50vw;
     }
 }
